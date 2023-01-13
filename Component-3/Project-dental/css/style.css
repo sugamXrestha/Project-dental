@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    padding: 10px;
+    width: 95%;
+    box-sizing: border-box;
+
+}
+/* header section starts */
+
+header{
+    background-color: #26ccc3;
+    position: fixed;
+    width: 100%;
+}
+.logo-contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.contact-phone, .contact-mail, .contact-schedule{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+.header-contact .fa-solid{
+    color: #fff;
+    background: #22C3E6;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+/* header section starts */
+
