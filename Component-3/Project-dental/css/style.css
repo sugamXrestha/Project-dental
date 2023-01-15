@@ -151,6 +151,7 @@ nav ul a:hover, nav ul a:focus{
 .homepage .btn{
     padding: 5px 10px;
     background: none;
+    text-decoration: none;
     border: 1px solid #fff;
     color: #fff;
     border-radius: 30px;
@@ -336,7 +337,7 @@ nav ul a:hover, nav ul a:focus{
 .services-detail-left{
     width: 50%;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -346,6 +347,7 @@ nav ul a:hover, nav ul a:focus{
     color: #565656;
     text-align: center;
     padding: 30px 25px;
+    border-radius: 10px;
 }
 .services-detail-left .first{
     background: #22C3E6;
@@ -363,6 +365,7 @@ nav ul a:hover, nav ul a:focus{
 .services-detail-right{
     width: 49%;
     background: #fff;
+    border-radius: 10px;
 }
 .services-detail-right .services-detail-description{
     padding: 10px;
@@ -376,9 +379,227 @@ nav ul a:hover, nav ul a:focus{
     border-radius: 30px;
     color: #fff;
     display: inline-block;
+    transition: 0.5s;
 }
 .services-detail-description a{
     text-decoration: none;
     color: #fff;
 }
+.services-detail-description .btn:hover{
+    color: #000;
+    background: #26ccc3;
+}
 
+/* services section ends */
+
+/* appointment section starts */
+
+.appointment-background{
+    background: #1ABDB4;
+}
+.appointment-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px 0;
+}
+.appointment-content{
+    width: 50%;
+}
+.appointment-content p{
+    color: #fff;
+}
+
+
+.appointment-content .btn{
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    color: #000;
+    display: inline-block;
+    transition: 0.5s;
+}
+.appointment-content a{
+    text-decoration: none;
+    color: #000;
+}
+.appointment-content .btn:hover{
+    background: #22C3E6;
+    border: 2px solid #fff;
+}
+.appointment-table{
+    width: 49%;
+    text-align: center;
+    background: #fff;
+    padding: 20px 70px;
+    border-radius: 20px;
+}
+.appointment-table input{
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #e7e6e6;
+    border: none;
+}
+.appointment-table .choose-name-email, .appointment-table .choose-date-time{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.appointment-table .btn{
+    padding: 10px 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    background: #22C3E6;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+.appointment-table a{
+    text-decoration: none;
+    color: #fff;
+}
+.appointment-table .btn:hover{
+    color: #000;
+    background: #26ccc3;
+}
+
+/* appointment section ends  */
+
+/* our dentist section starts */
+
+.our-dentists-background{
+    background: #40AFA9;
+}
+.our-dentists{
+    text-align: center;
+    padding: 30px 0;
+}
+.dentists-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dentists-detail{
+    width: 32%;
+    background-color: #fff;
+    padding: 0 0 10px;
+}
+.dentists-detail p{
+    color: #c7c7c7;
+}
+.dentists-service{
+    color: #2F2F2F !important;
+    margin-bottom: 5px;
+}
+.our-dentists .btn{
+    padding: 10px 50px;
+    margin-top: 30px;
+    font-size: 18px;
+    background: #22C3E6;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+}
+.our-dentists a{
+    text-decoration: none;
+    color: #fff;
+}
+.our-dentists .btn:hover{
+    background: #26ccc3;
+    border: 2px solid #fff;
+}
+
+/* our dentist section ends */
+
+/* testimonial section starts */
+
+.testimonial-background{
+    background: #1ABDB4;
+}
+.testimonial{
+    text-align: center;
+    padding: 30px 0;
+}
+.testimonial-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+.testimonial-detail{
+    width: 49%;
+    text-align: left;
+    
+}
+.testimonial-comment{
+    background-color: #fff;
+    padding: 10px;
+    color: #565656;
+}
+.testimonial-comment h3{
+    color: #000;
+    font-size: 18px;
+}
+.testimonial-comment .fa-quote-left{
+    margin-right: 10px;
+}
+.testimonial-comment-name{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #2F2F2F;
+    margin-top: 10px;
+}
+.testimonial-comment-name img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* testimonial section ends */
+
+/* footer menu section starts */
+
+.footer-menu-background{
+    background-color: #40AFA9;
+}
+.footer-menu{
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-contact{
+    width: 49%;
+}
+.footer-menu p{
+    color: #565656;
+}
+.footer-contact .fa-solid{
+    color: #fff;
+    background-color: #22C3E6;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 10px 10px 0;
+}
+
+/* footer menu section ends */
+
+/* footer section starts */
+
+footer{
+    background-color: #26ccc3;
+}
+.copyright{
+    color: #565656;
+}
+/* footer section ends */
