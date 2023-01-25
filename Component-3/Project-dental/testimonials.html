@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/Layer 1.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -37,29 +38,53 @@
 
 <!-- navigation-section starts -->
 
-    <section class="navigation-background">
-        <div class="container">
-            <div class="navigation">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="logo" width="100%">
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" >Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="testimonials.html" class="active">Testimonials</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="nav-appointment">
-                    <a href="index.html#appointment-table">Appointment</a>
-                </div>
+<section class="navigation-background">
+    <div class="container">
+        <div class="navigation">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo" width="100%">
+                </a> 
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html" class="active">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-appointment">
+                <a href="form.html">Appointment</a>
+            </div>
+            <div class="mobile-screen">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            <div class="mobile-screen">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About us</a>
+                    <a href="services.html">Services</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="contact.html">Contact</a>
+                  </div>
+            </div>
+            </div>
+            
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
 
 <!-- navigation section ends -->
 
@@ -70,7 +95,7 @@
         <div class="testimonials-coverpage">
             <p class="slogan">A caring positive experience.</p>
             <p>A genuine smile comes from the heart, but a healthy smile needs good dental care.</p>
-            <a class="btn btn-transparent" href="#appointment-table">Appointment</a>
+            <a class="btn btn-transparent" href="form.html">Appointment</a>
             <a href="#" class="btn">Call or text +977 9823454159</a>
         </div>
     </div>
@@ -133,28 +158,71 @@
 
 <!-- testimonial section ends -->
 
+<!-- our office section starts -->
 
+<section class="large-office">
+    <div class="our-office-background">
+        <div class="container">
+            <div class="our-office">
+                <div class="our-office-title">
+                    <h1>Our Office</h1>
+                </div>
+                <div class="our-office-content">
+                    <div class="our-office-images">
+                        <img src="images/our-office-1.jpg" alt="" width="150px" height="150px">
+                        <img src="images/our-office-2.jpg" alt="" width="150px" height="300px">
+                    </div>
+                    <div class="our-office-images">
+                        <img src="images/our-office-3.jpg" alt="" width="150px" height="150px">
+                        <img src="images/our-office-4.jpg" alt="" width="150px" height="300px">
+                    </div> 
+                    <div class="our-office-images">
+                        <img src="images/our-office-5.jpg" alt="" width="150px" height="300px">
+                        <img src="images/our-office-6.jpg" alt="" width="150px" height="150px">
+                    </div> 
+                    <div class="our-office-images">
+                        <img src="images/our-office-1.jpg" alt="" width="150px" height="300px">
+                        <img src="images/our-office-2.jpg" alt="" width="150px" height="150px">
+                    </div>     
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="mobile-office">
+    <div class="our-office-background">
+        <div class="container">
+            <div class="our-office">
+                <div class="our-office-title">
+                    <h1>Our Office</h1>
+                </div>
+                <div class="our-office-content">
+                    <div class="our-office-images">
+                        <img src="images/our-office-1.jpg" alt="" width="80px" height="80px">
+                        <img src="images/our-office-2.jpg" alt="" width="80px" height="160px">
+                    </div>
+                    <div class="our-office-images">
+                        <img src="images/our-office-3.jpg" alt="" width="80px" height="80px">
+                        <img src="images/our-office-4.jpg" alt="" width="80px" height="160px">
+                    </div> 
+                    <div class="our-office-images">
+                        <img src="images/our-office-5.jpg" alt="" width="80px" height="160px">
+                        <img src="images/our-office-6.jpg" alt="" width="80px" height="80px">
+                    </div> 
+                    <div class="our-office-images">
+                        <img src="images/our-office-1.jpg" alt="" width="80px" height="160px">
+                        <img src="images/our-office-2.jpg" alt="" width="80px" height="80px">
+                    </div>     
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- our office section ends -->
 
 <!-- footer-menu section starts -->
 

@@ -15,7 +15,6 @@
 
     
     <section class="background">
-      
     </section>
 
 
@@ -63,13 +62,38 @@
                     </ul>
                 </nav>
                 <div class="nav-appointment">
-                    <a href="#appointment-table">Appointment</a>
+                    <a href="form.html">Appointment</a>
                 </div>
+                <div class="mobile-screen">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                <div class="mobile-screen">
+                    <div id="mySidepanel" class="sidepanel">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <a href="index.html" class="active">Home</a>
+                        <a href="about.html">About us</a>
+                        <a href="services.html">Services</a>
+                        <a href="testimonials.html">Testimonials</a>
+                        <a href="contact.html">Contact</a>
+                      </div>
+                </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
+
 <!-- navigation section ends -->
+
 
 <!-- homepage starts -->
 
@@ -79,11 +103,12 @@
                 <h1>WELCOME TO FAMILY DENTAL CARE</h1>
                 <h3>Best Dental Care <br> In Your City</h3>
                 <p class="slogan">We’re your dental defenders.</p>
-                <a href="#appointment-table" class="btn btn-transparent">Appointment</a>
+                <a href="form.html" class="btn btn-transparent">Appointment</a>
                 <a href="#" class="btn">Call or text +977 9823454159</a>
             </div>
         </div>
     </section>
+    
 
 <!-- homepage ends -->
 
@@ -106,7 +131,7 @@
                     <img src="images/appointment.png" alt="">
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id tempore animi .</p>
-                <p class="btn"><a href="#appointment-table">Requests</a></p>
+                <p class="btn"><a href="form.html">Requests</a></p>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -352,7 +377,7 @@
                 <div class="testimonial-content">
                     <div class="testimonial-detail">
                         <div class="testimonial-comment">
-                            <h3><i class="fa-solid fa-quote-left"></i>The amazing clinic! Wonderful support!</h3>
+                            <h3><img src="images/quote.png" alt="">The amazing clinic! Wonderful support!</h3>
                             <p>They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
                         </div>
                         <div class="testimonial-comment-name">
@@ -362,7 +387,7 @@
                     </div>
                     <div class="testimonial-detail">
                         <div class="testimonial-comment">
-                            <h3><i class="fa-solid fa-quote-left"></i>The amazing clinic! Wonderful support!</h3>
+                            <h3><img src="images/quote.png" alt="">The amazing clinic! Wonderful support!</h3>
                             <p>They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
                         </div>
                         <div class="testimonial-comment-name">
@@ -372,7 +397,7 @@
                     </div>
                     <div class="testimonial-detail">
                         <div class="testimonial-comment">
-                            <h3><i class="fa-solid fa-quote-left"></i>The amazing clinic! Wonderful support!</h3>
+                            <h3><img src="images/quote.png" alt="">The amazing clinic! Wonderful support!</h3>
                             <p>They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
                         </div>
                         <div class="testimonial-comment-name">
@@ -382,7 +407,7 @@
                     </div>
                     <div class="testimonial-detail">
                         <div class="testimonial-comment">
-                            <h3><i class="fa-solid fa-quote-left"></i>The amazing clinic! Wonderful support!</h3>
+                            <h3><img src="images/quote.png" alt="">The amazing clinic! Wonderful support!</h3>
                             <p>They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
                         </div>
                         <div class="testimonial-comment-name">

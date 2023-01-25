@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    scroll-margin-top: 200px;
 }
 .container{
     margin: 0 auto;
@@ -61,23 +60,23 @@ header{
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    margin-left: 100px;
 }
 .contact-phone, .contact-mail, .contact-schedule{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    
 }
 .header-contact img{
     color: #fff;
     background: #22C3E6;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 .header-contact p{
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -86,7 +85,7 @@ header{
 /* navigation section starts */
 
 .navigation-background{
-    background: #22C3E6;
+    background: #00d1ff;
     position: sticky;
     top: 0;
     z-index: 99;
@@ -107,7 +106,7 @@ nav ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px 50px;
+    gap: 10px 35px;
 }
 nav ul li a{
     text-decoration: none;
@@ -134,6 +133,51 @@ nav ul a:hover, nav ul .active{
     background: linear-gradient(#0ff433, #00ffe7);
     color: #fff;
 }
+.openbtn{
+    display: none;
+}
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: #000;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    background-color: transparent;
+  }
+  
+ 
 
 /* navigation section ends */
 
@@ -413,7 +457,7 @@ nav ul a:hover, nav ul .active{
 /* appointment section starts */
 
 .appointment-background{
-    background: #66b9bf;
+    background: #1fb58f;
 }
 .appointment-section{
     display: flex;
@@ -456,7 +500,7 @@ nav ul a:hover, nav ul .active{
     border-radius: 20px;
 }
 .appointment-table input{
-    width: 200px;
+    width: 49%;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -468,7 +512,6 @@ nav ul a:hover, nav ul .active{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .appointment-table .btn{
     padding: 10px 50px;
     margin-top: 10px;
@@ -494,7 +537,7 @@ nav ul a:hover, nav ul .active{
 /* our dentist section starts */
 
 .our-dentists-background{
-    background: #77c9d4;
+    background: #7cdbd5;
 }
 .our-dentists{
     text-align: center;
@@ -541,7 +584,7 @@ nav ul a:hover, nav ul .active{
 /* testimonial section starts */
 
 .testimonial-background{
-    background: #8fd8d2;
+    background: #1fb58f;
 }
 .testimonial{
     text-align: center;
@@ -568,7 +611,7 @@ nav ul a:hover, nav ul .active{
     color: #000;
     font-size: 18px;
 }
-.testimonial-comment .fa-quote-left{
+.testimonial-comment img{
     margin-right: 10px;
 }
 .testimonial-comment-name{
@@ -644,9 +687,7 @@ footer{
 .about-coverpage{
     padding: 85px 0;
     padding-left: 20%;
-    text-align: left;
     color: #fff;
-
 }
 .about-coverpage h3{
     font-size: 36px;
@@ -736,7 +777,7 @@ p.slogan{
 /* meet our team section starts */
 
 .our-team-background{
-    background-color: #77c9d4;
+    background-color: #cae4db;;
 }
 .our-team-title{
     text-align: center;
@@ -796,11 +837,12 @@ p.slogan{
     margin-top: 40px;
 }
 .our-office-images{
-    /* width: 24%; */
     display: flex;
     flex-direction: column;
 }
-
+.mobile-office{
+    display: none;
+}
 /* our office section ends */
 
 
@@ -823,7 +865,6 @@ p.slogan{
     position: relative;
     padding: 147px 0;
     padding-left: 50%;
-    text-align: left;
     color: #fff;
 
 }
@@ -903,7 +944,7 @@ p.slogan{
 /* services homepage starts */
 
 .services-process-background{
-    background-color: #719d96;
+    background-color: #1fb58f;
     padding: 50px 150px;
 }
 .services-process{
@@ -1004,7 +1045,6 @@ p.slogan{
 .hovereffect a.info {
     display: inline-block;
     text-decoration: none;
-    padding: 7px 7px;
     text-transform: uppercase;
     color: #f53240;
     border: 1px solid #fff;
@@ -1028,7 +1068,6 @@ p.slogan{
     -ms-transform: scale(1);
     transform: scale(1);
 }
-
 .hovereffect a.info:hover {
     box-shadow: 0 0 5px #fff;
 }
@@ -1078,9 +1117,7 @@ p.slogan{
     position: relative;
     padding: 160px 0;
     padding-left: 50%;
-    text-align: left;
     color: #fff;
-
 }
 .testimonials-coverpage h3{
     font-size: 36px;
@@ -1122,14 +1159,9 @@ p.slogan{
     color: #000;
 }
 
-
-
-
-
 /* contact page begins */
 
 /* map and contact section starts */
-
 
 .contact-coverpage-background{
     background-image: linear-gradient(to right, rgba(0, 137, 21, 0.6), rgba(0, 255, 231, 0.6)), url(../images/contact-coverpage.jpg);
@@ -1219,7 +1251,7 @@ p.slogan{
 /* quaries section starts */
 
 .quaries-background{
-    background-color: #40AFA9;
+    background-color: #1fb58f;
     padding: 30px 0;
 }
 .quaries input, textarea{
@@ -1252,15 +1284,100 @@ p.slogan{
 
 
 
-
-
-
-
-
-
-
-
-
+.login-coverpage{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-page{
+    background-color:#66b9bf;
+    padding: 20px;
+    width: 35%;
+    color: #fff;
+}
+.login-page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+.login-page-title{
+    padding-bottom: 10px;
+}
+.login-page-title h3{
+    font-size: 34px;
+}
+.login-page-header .times{
+    font-size: 24px;
+    cursor: pointer;
+}
+.login-page-header .times:hover{
+    color: #bcbcbc;
+}
+.form-control{
+    padding: 5px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    gap: 10px;
+}
+.form-control input, .birthday select{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.login-page .form-control select{
+    display: flex;
+    justify-content: space-between;
+}
+.login-page .form-control #day option{
+    width: 14%;
+    display: inline-block;
+}
+.gender{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.gender label{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+/* .gender input{
+    margin-left: 50px;
+} */
+.login-page a{
+    color: rgb(68, 68, 142);
+}
+.login-page p{
+    font-size: 14px;
+}
+.login-page .sign-up{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.login-page .sign-up input{
+    padding: 10px 20px;
+    background-color: #008915;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
 
 /* 
 <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
@@ -1294,3 +1411,231 @@ p.slogan{
       }
     }
   } */
+
+
+@media screen and (max-width:767px) {
+    h1{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+    .header-contact{
+        margin-left: 0;
+    }
+    .header-contact p{
+        display: none;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+    nav{
+        display: none;
+    }
+    .nav-appointment{
+        display: none;
+    }
+    .openbtn{
+        display: block;
+    }
+    /* mobile homepage section starts */
+    .homepage{
+        padding: 30px 0;
+    }
+    .homepage h1{
+        font-size: 20px;
+        margin: 0;
+    }
+    .homepage h3{
+        font-size: 22px;
+    }
+    p.slogan{
+        font-size: 14px;
+    }
+    /* mobile homepage section ends */
+
+    /* about us section starts */
+
+    .about-us-image{
+        width: 100%;
+    }
+    .about-us-content{
+        width: 100%;
+    }
+    .about-us-content h3{
+        font-size: 20px;
+    }
+    .about-us-detail-circle{
+        width: 90PX;
+        height: 90PX;
+        padding: 10px;
+        font-size: 11px;
+    }
+    .about-us-detail-circle img{
+        margin-bottom: 3px;
+        width: 40%;
+    }
+
+    .about-us-detail-circle span{
+        color: #22C3E6;
+    }
+    .quote-background{
+        padding: 100px 0;
+    }
+    /* about us section ends */
+
+    /* services section starts */
+
+    .services-detail-left{
+        width: 100%;
+    }
+    .services-detail-left .card{
+        width: 47%;
+        padding: 30px 25px;
+    }
+    .services-detail-right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .services-detail-right img{
+        border-radius: 10px 10px 0 0;
+    }
+    /* services section ends */
+
+    /* appointment section starts */
+
+    .appointment-section{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 30px 0;
+    }
+    .appointment-content{
+        width: 100%;
+    }
+    .appointment-table{
+        width: 100%;
+        padding: 20px 15px;
+    }
+    .appointment-table input{
+        width: 100%;
+    }
+    .appointment-table .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+
+    .dentists-detail{
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+
+    .testimonial-detail{
+        width: 100%;
+        font-size: 11px;
+    }
+    .testimonial-detail h3{
+        font-size: 12px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+
+
+
+    /* about pages starts */
+
+    .about-coverpage{
+        padding: 30px 0;
+        padding-left: 0;
+    }
+    .about-homepage-left{
+        width: 100%;
+    }
+    .about-homepage-right{
+        width: 100%;
+    }
+    .our-team-title{
+        padding: 15px 0 15px;
+        font-size: 13px;
+    }
+    .our-team-content .our-team-images{
+        width: 100%;
+    }
+    .our-team-content .our-team-description{
+        width: 100%;
+    }
+    .large-office{
+        display: none;
+    }
+    .mobile-office{
+        display: block;
+    }
+    /* about pages ends */
+
+    /* services pages starts */
+    .services-coverpage{
+        padding: 70px 0;
+        padding-left: 0;
+    }
+    .services-homepage-background, .services-process-background{
+        padding: 20px 10px;
+    }
+    .services-homepage, .services-process{
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+    .services-homepage-images, .services-homepage-content, .services-process-images, .services-process-content{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .services-help-item{
+        width: 100%;
+    }
+    .hovereffect a.info {
+        display: inline-block;
+        padding: 52px 10px 20px;
+    }
+    /* services pages ends */
+
+    /* testimonials pages starts */
+
+    .testimonials-coverpage{
+        padding: 50px 0;
+        padding-left: 0;
+    }
+    /* testimonials pages ends */
+
+    /* contact pages starts */
+
+    .contact-coverpage{
+        padding: 50px 0;
+        padding-left: 0;
+    }
+    .map, .contact-table{
+        width: 100%;
+    }
+    .map iframe{
+        width: 336px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    /* contact pages ends */
+
+
+    /* login page starts */
+
+    .login-page{
+        width: 95%;
+    }
+    .login-page-title h3{
+        font-size: 30px;
+    }
+    /* login page ends */
+}
