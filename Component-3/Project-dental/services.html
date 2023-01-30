@@ -29,6 +29,12 @@
                         <img src="images/clock.png" alt="">
                         <p>12:00 pm - 8:00 pm</p>
                     </div>
+                    <a href="form.html">
+                        <div class="user-login">
+                            <img src="images/user.png" alt="">
+                            <a id="myLogin">Login</a>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -56,7 +62,7 @@
                 </ul>
             </nav>
             <div class="nav-appointment">
-                <a href="form.html">Appointment</a>
+                <div id="myBtn">Appointment</div>
             </div>
             <div class="mobile-screen">
                 <button class="openbtn" onclick="openNav()">☰</button>
@@ -68,6 +74,7 @@
                     <a href="services.html">Services</a>
                     <a href="testimonials.html">Testimonials</a>
                     <a href="contact.html">Contact</a>
+                    <a href="contact.html#appointment-table">Appointment</a>
                   </div>
             </div>
             </div>
@@ -92,10 +99,10 @@
 
 <section class="services-coverpage-background">
     <div class="container">
-        <div class="services-coverpage">
+        <div class="services-coverpage coverpage">
             <p class="slogan">You are only<br> a click away from the <br> most amazing smile</p>
             <p>Special People For Special Smiles</p>
-            <a class="btn btn-transparent" href="form.html">Appointment</a>
+            <a class="btn btn-transparent" href="contact.html#appointment-table">Appointment</a>
             <a href="#" class="btn">Call or text +977 9823454159</a>
         </div>
     </div>
@@ -109,7 +116,7 @@
         <div class="container">
             <div class="services-homepage">
                 <div class="services-homepage-images">
-                    <img src="images/brushing.webp" alt="" width="300px" height="300px">
+                    <img src="images/services-description1.jpg" alt="" width="300px" height="300px">
                 </div>
                 <div class="services-homepage-content">
                     <h3>With you, every step<br> of the way</h3>
@@ -129,12 +136,13 @@
     <div class="container">
         <div class="services-process">
             <div class="services-process-content">
-                <h3>With you, every step<br> of the way</h3>
-                <p>Even the best cared for teeth need some TLC to keep them sparkling clean and healthy. Whether you need a routine checkup, filling, or gum disease treatment, we’ll meet your general dentistry needs with high-quality, one-on-one service.<br>
-                We welcome patients of all ages, backgrounds, and dental health histories. Our local general dentists look forward to treating you like family. Get ready to relax, feel good, and look good. Request an <a href="#">appointment</a>  today.</p>
+                <h3>Our process is simple</h3>
+                <p>We focus on the prevention and early detection of decay and disease</p>
+                <p>Catching issues early gives you more treatment options</p>
+                <p>Your comfort and satisfaction come first — and you won’t believe how good your teeth look and feel!</p>
             </div>
             <div class="services-process-images">
-                <img src="images/brushing.webp" alt="" width="300px" height="300px">
+                <img src="images/services-description2.jpg" alt="" width="300px" height="300px">
             </div>
         </div>
     </div>
@@ -154,11 +162,88 @@
                     <div class="services-help-item">
                         <div class="hovereffect">
                             <div class="services-help-images">
-                                <img src="images/braces.jpg" alt="" width="100%">
+                                <img src="images/services1.webp" alt="" width="100%">
                             </div>
                             <div class="services-help-description">
                                 <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
+                                <a href="#" class="info">Dental cleanings are essential for maintaining optimal oral health and function. These preventive visits can help stop dental issues before they get worse.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-help-item">
+                        <div class="hovereffect">
+                            <div class="services-help-images">
+                                <img src="images/services2.webp" alt="" width="100%">
+                            </div>
+                            <div class="services-help-description">
+                                <h3>Scaling and Root Planing</h3>
+                                <a href="#" class="info">Tooth scaling and root planing are nonsurgical deep-cleaning treatments for periodontitis. This severe gum disease can cause you to lose teeth, gums and bone.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-help-item">
+                        <div class="hovereffect">
+                            <div class="services-help-images">
+                                <img src="images/services3.webp" alt="" width="100%">
+                            </div>
+                            <div class="services-help-description">
+                                <h3>Tooth Filing</h3>
+                                <a href="#" class="info">Dental fillings are single or combinations of metals, plastics, glass or other materials used to repair or restore teeth. Popular questions about fillings are answered.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-help-item">
+                        <div class="hovereffect">
+                            <div class="services-help-images">
+                                <img src="images/services4.webp" alt="" width="100%">
+                            </div>
+                            <div class="services-help-description">
+                                <h3>Bleaching</h3>
+                                <a href="#" class="info">Teeth whitening is the most popular elective dental treatment on the market. Discoloration can occur for a number of reasons and may be extrinsic or intrinsic.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-help-item">
+                        <div class="hovereffect">
+                            <div class="services-help-images">
+                                <img src="images/services5.webp" alt="" width="100%">
+                            </div>
+                            <div class="services-help-description">
+                                <h3>Covering of Tooth</h3>
+                                <a href="#" class="info">Dental crowns are permanent caps placed on weak or damaged teeth to protect and cover a tooth. They can be made of materials like metal, ceramic or porcelain.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-help-item">
+                        <div class="hovereffect">
+                            <div class="services-help-images">
+                                <img src="images/services6.webp" alt="" width="100%">
+                            </div>
+                            <div class="services-help-description">
+                                <h3>Root Canal Treatment (RCT)</h3>
+                                <a href="#" class="info">Root canal therapy/treatment (RCT) is used to treat an infected or abscessed tooth. It eliminates infection by removing the nerves and tissues inside of a tooth.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-help-item">
+                        <div class="hovereffect">
+                            <div class="services-help-images">
+                                <img src="images/services7.webp" alt="" width="100%">
+                            </div>
+                            <div class="services-help-description">
+                                <h3>Tooth Extraction</h3>
+                                <a href="#" class="info">A tooth extraction may be necessary for many reasons, including severe damage or decay. One of the most common dental procedures, a tooth extraction can eliminate bacteria.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-help-item">
+                        <div class="hovereffect">
+                            <div class="services-help-images">
+                                <img src="images/services8.webp" alt="" width="100%">
+                            </div>
+                            <div class="services-help-description">
+                                <h3>Implants</h3>
+                                <a href="#" class="info">A titanium screw (like a tooth root ) that is surgically positioned into the jawbone beneath the gum line. A natural tooth colored crown is then placed over the Dental Implant. </a>
                             </div>
                         </div>
                     </div>
@@ -168,85 +253,8 @@
                                 <img src="images/braces.jpg" alt="" width="100%">
                             </div>
                             <div class="services-help-description">
-                                <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-help-item">
-                        <div class="hovereffect">
-                            <div class="services-help-images">
-                                <img src="images/braces.jpg" alt="" width="100%">
-                            </div>
-                            <div class="services-help-description">
-                                <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-help-item">
-                        <div class="hovereffect">
-                            <div class="services-help-images">
-                                <img src="images/braces.jpg" alt="" width="100%">
-                            </div>
-                            <div class="services-help-description">
-                                <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-help-item">
-                        <div class="hovereffect">
-                            <div class="services-help-images">
-                                <img src="images/braces.jpg" alt="" width="100%">
-                            </div>
-                            <div class="services-help-description">
-                                <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-help-item">
-                        <div class="hovereffect">
-                            <div class="services-help-images">
-                                <img src="images/braces.jpg" alt="" width="100%">
-                            </div>
-                            <div class="services-help-description">
-                                <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-help-item">
-                        <div class="hovereffect">
-                            <div class="services-help-images">
-                                <img src="images/braces.jpg" alt="" width="100%">
-                            </div>
-                            <div class="services-help-description">
-                                <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-help-item">
-                        <div class="hovereffect">
-                            <div class="services-help-images">
-                                <img src="images/braces.jpg" alt="" width="100%">
-                            </div>
-                            <div class="services-help-description">
-                                <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-help-item">
-                        <div class="hovereffect">
-                            <div class="services-help-images">
-                                <img src="images/braces.jpg" alt="" width="100%">
-                            </div>
-                            <div class="services-help-description">
-                                <h3>Periodic Check Up</h3>
-                                <a href="#" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium recusandae veritatis nisi quidem?</a>
+                                <h3>Orthodontic Treatment </h3>
+                                <a href="#" class="info">Orthodontics is a dental specialty focused on aligning your bite. Orthodontic treatments include traditional braces, clear aligners and removable retainers.</a>
                             </div>
                         </div>
                     </div>
@@ -264,7 +272,7 @@
             <div class="see-you">
                 <h1>See You Soon</h1>
                 <p>Ready to schedule an appointment? Contact us online or call <a href="#">(704) 665-7887</a>.</p>
-                <a href="#" class="btn">Request Appointment</a>
+                <a href="contact.html#appointment-table" class="btn">Request Appointment</a>
             </div>
         </div>
     </section>
@@ -313,5 +321,200 @@
         </div>
     </div>
 </footer>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="appointment-table" id="appointment-table">
+          <span class="close">&times;</span>
+          <h3>Book An Appointment</h3>
+          <div class="choose-service">
+              <input type="text" placeholder="Choose Services">
+          </div>
+          <div class="choose-name-email">
+              <input type="text" placeholder="Your Name">
+              <input type="text" placeholder="Your Email">
+          </div>
+          <div class="choose-date-time">
+              <input type="date">
+              <input type="time">
+          </div>
+          <div>
+              <p class="btn"><a href="#">Submit</a></p>
+              <p class="btn"><a href="#">Cancel</a></p>
+          </div>
+      </div>
+    </div>
+  
+  </div>
+  
+      <script>
+          var modal = document.getElementById("myModal");
+          
+          var btn = document.getElementById("myBtn");
+          
+          var span = document.getElementsByClassName("close")[0];
+          
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+          
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+          
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+
+<!-- login modal -->
+
+<div id="myLoginModal" class="loginmodal">
+
+    <!-- Modal content -->
+    <div class="loginmodal-content">
+        <div class="login-coverpage">
+            <form action="" class="login-page">
+                <div class="login-page-header">
+                    <div class="login-page-title">
+                        <h3>Sign Up</h3>
+                        <p>It’s quick and easy.</p>
+                    </div>
+                    <span class="loginclose">&times;</span>
+                </div>
+                <div class="form-control name">
+                    <input type="text" class="firstname" placeholder="FirstName">
+                    <input type="text" class="lastname" placeholder="LastName">
+                </div>
+                <div class="form-control">
+                    <input type="email number" placeholder="Your email or phone number" class="email-number">
+                </div>
+                <div class="form-control">
+                    <input type="password" placeholder="Password">
+                </div>
+                <p>Birthday</p>
+                <div class="form-control birthday">
+                    <select name="month" id="month">
+                        <option selected disabled>Month</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+
+                    <select name="day" id="day">
+                        <option selected disabled>Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+
+                    <select name="year" id="year">
+                        <option selected disabled>Year</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+                <p>Gender</p>
+                <div class="gender">
+                    <label>Male<input type="radio" name="gender" value="Male" checked></label>
+                    <label>Female<input type="radio" name="gender" value="Female"></label>
+                    <label>Others<input type="radio" name="gender" value="Others"></label>
+                </div>
+                <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a> </p>
+                <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>  
+                <div class="sign-up">
+                    <input type="submit" value="Sign up">
+                </div>  
+                
+            </form>
+        </div>
+    </div>
+</div>
+  
+      <script>
+          var loginmodal = document.getElementById("myLoginModal");
+          
+          var btn = document.getElementById("myLogin");
+          
+          var span = document.getElementsByClassName("loginclose")[0];
+          
+          btn.onclick = function() {
+            loginmodal.style.display = "block";
+          }
+          
+          span.onclick = function() {
+            loginmodal.style.display = "none";
+          }
+          
+          window.onclick = function(event) {
+            if (event.target == loginmodal) {
+              loginmodal.style.display = "none";
+            }
+          }
+          </script>
+
 </body>
 </html>

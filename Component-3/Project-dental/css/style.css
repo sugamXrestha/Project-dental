@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    scroll-margin-top: 100px;
 }
 .container{
     margin: 0 auto;
@@ -12,7 +13,7 @@
 }
 h1{
     font-size: 28px;
-    color: #dcae1d;
+    color: #e52a6f;
     margin: 10px 0;
     border-bottom: 5px solid #565656;
     display: inline-block;
@@ -48,7 +49,7 @@ header{
 .logo-contact-section{
     background-color: #26ccc3;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
@@ -62,7 +63,7 @@ header{
     gap: 10px;
     margin-left: 100px;
 }
-.contact-phone, .contact-mail, .contact-schedule{
+.contact-phone, .contact-mail, .contact-schedule, .user-login{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,6 +79,9 @@ header{
     color: #fff;
     font-size: 14px;
     cursor: pointer;
+}
+.user-login{
+    margin-left: 100px;
 }
 
 /* header section starts */
@@ -123,16 +127,118 @@ nav ul a:hover, nav ul .active{
 }
 .nav-appointment a{
     text-decoration: none;
+    color: #000000;
+}
+.nav-appointment{
+    text-decoration: none;
     background: #fff;
     padding: 4px 10px;
     font-size: 18px;
     border-radius: 30px;
-    color: #22C3E6;
-}
-.nav-appointment a:hover{
-    background: linear-gradient(#0ff433, #00ffe7);
-    color: #fff;
-}
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+    position: relative;
+  }
+  
+  .nav-appointment:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+    background-color: #00ffe7;
+  }
+  
+  .nav-appointment:hover::before, .nav-appointment:hover::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #FDA8CF;
+    border-radius: 30px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .nav-appointment:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -2px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 2px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 2px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -2px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -2px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -2px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 2px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 2px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -2px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -2px;
+      right: 0;    
+    }
+  }
 .openbtn{
     display: none;
 }
@@ -147,6 +253,7 @@ nav ul a:hover, nav ul .active{
     transition: 0.5s;
     padding-top: 60px;
     background-color: #000;
+    opacity: 0.9;
   }
   
   .sidepanel a {
@@ -188,7 +295,6 @@ nav ul a:hover, nav ul .active{
     background-size: cover;
     background-position: center;
 }
-
 .homepage{
     padding: 130px 0;
 }
@@ -202,7 +308,7 @@ nav ul a:hover, nav ul .active{
     text-transform: uppercase;
     color: #fff;
 }
-.homepage .btn{
+.coverpage .btn{
     padding: 5px 10px;
     background: none;
     text-decoration: none;
@@ -215,11 +321,11 @@ nav ul a:hover, nav ul .active{
     transition: 0.5s;
     margin-top: 10px;
 }
-.homepage .btn:hover{
+.coverpage .btn:hover{
     background-color: #fff;
     color: #000;
 }
-.homepage .btn-transparent:hover{
+.coverpage .btn-transparent:hover{
     background-color: #fff;
     border-radius: 30px;
     color: #000;
@@ -264,21 +370,14 @@ nav ul a:hover, nav ul .active{
     color: #fff;
     margin-bottom: 30px;
 }
-.table .card .btn{
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 18px;
-    text-align: center;
-    background-color: #e52a6f;
-    border-radius: 30px;
+.table .learn-more {
+   background-color: rgb(229, 42, 111);
+  border-radius: 30px;
+  display: block;
+  width: unset;
 }
-.table .card .btn a{
-    text-decoration: none;
-    color: #fff;
-}
-.table .card .btn:hover{
-    color: #000;
-    background: #26ccc3;
+.table .learn-more:before {
+    background-color: rgba(121, 0, 45, 0.4);
 }
 
 /* table section ends */
@@ -318,23 +417,44 @@ nav ul a:hover, nav ul .active{
     gap: 10px;
     margin-top: 10px;
 }
-.about-us-content .btn{
-    padding: 10px 20px;
-    margin-top: 10px;
-    font-size: 18px;
-    background: #a47fae;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-block;
-    transition: 0.5s;
+.learn-more {
+    text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+   background-color: #a47fae;
+  padding: 10px 20px;
+  margin-top: 10px;
+  width: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.2s linear 0s;
 }
-.about-us-content a{
-    text-decoration: none;
-    color: #fff;
+.learn-more:before {
+    content: "\ff1e";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30px;
+    background-color: rgba(115, 5, 117, 0.4);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0,1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
 }
-.about-us-content .btn:hover{
-    color: #000;
-    background: #26ccc3;
+
+.learn-more:hover {
+    text-indent: 15px;
+}
+.learn-more:hover:before {
+    transform: scale(1,1);
+    text-indent: 0;
 }
 .about-us-detail-circle{
     background-color: #2F2F2F;
@@ -433,23 +553,11 @@ nav ul a:hover, nav ul .active{
 .services-detail-right .services-detail-description h3{
     color: #000;
 }
-.services-detail-description .btn{
-    padding: 10px 20px;
-    margin-top: 10px;
-    font-size: 18px;
-    background: #396ec0;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-block;
-    transition: 0.5s;
+.services .learn-more {
+   background-color: #396fc0;
 }
-.services-detail-description a{
-    text-decoration: none;
-    color: #fff;
-}
-.services-detail-description .btn:hover{
-    color: #000;
-    background: #26ccc3;
+.services .learn-more:before {
+    background-color: rgba(5, 48, 113, 0.6);
 }
 
 /* services section ends */
@@ -494,6 +602,7 @@ nav ul a:hover, nav ul .active{
 }
 .appointment-table{
     width: 49%;
+    margin: auto;
     text-align: center;
     background-color: #f24c4e;
     padding: 20px 70px;
@@ -560,24 +669,14 @@ nav ul a:hover, nav ul .active{
     color: #2F2F2F !important;
     margin-bottom: 5px;
 }
-.our-dentists .btn{
-    padding: 10px 50px;
+
+.our-dentists .learn-more {
+    background-color: rgb(7, 136, 155);
     margin-top: 30px;
-    font-size: 18px;
-    background: #07889b;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-block;
-    transition: 0.5s;
-}
-.our-dentists a{
-    text-decoration: none;
-    color: #fff;
-}
-.our-dentists .btn:hover{
-    background: #26ccc3;
-    border: 2px solid #fff;
-}
+ }
+ .our-dentists .learn-more:before {
+     background-color: rgba(5, 80, 92, 0.6);
+ }
 
 /* our dentist section ends */
 
@@ -700,33 +799,8 @@ footer{
 }
 p.slogan{
     font-family: 'Norican', cursive;
-    font-size: 40px;
     text-transform: uppercase;
-    color: #8e5500;
-
-}
-
-.about-coverpage .btn{
-    padding: 5px 10px;
-    background: none;
-    text-decoration: none;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 30px;
-    margin-right: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-top: 10px;
-}
-.about-coverpage .btn:hover{
-    background-color: #fff;
-    color: #000;
-}
-.about-coverpage .btn-transparent:hover{
-    background-color: #fff;
-    border-radius: 30px;
-    color: #000;
+    color: #ffff00;
 }
 
 /* about coverpage section ends */
@@ -744,9 +818,6 @@ p.slogan{
     box-sizing: border-box;
     color: #df744a;
 }
-/* .about-homepage h3{
-    color: #df744a;
-} */
 .about-homepage p{
     color: #c98474;
 }
@@ -845,13 +916,6 @@ p.slogan{
 }
 /* our office section ends */
 
-
-
-
-
-
-
-
 /* services pages begins */
 
 /* about coverpage section starts */
@@ -863,7 +927,7 @@ p.slogan{
 }
 .services-coverpage{
     position: relative;
-    padding: 147px 0;
+    padding: 160px 0;
     padding-left: 50%;
     color: #fff;
 
@@ -877,35 +941,6 @@ p.slogan{
 .services-coverpage p{
     font-size: 20px;
     margin: 5px 0;
-    
-}
-p.slogan{
-    font-family: 'Norican', cursive;
-    font-size: 40px;
-    color: #8e5500;
-    text-transform: uppercase;
-}
-.services-coverpage .btn{
-    padding: 5px 10px;
-    background: none;
-    text-decoration: none;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 30px;
-    margin-right: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-top: 10px;
-}
-.services-coverpage .btn:hover{
-    background-color: #fff;
-    color: #000;
-}
-.services-coverpage .btn-transparent:hover{
-    background-color: #fff;
-    border-radius: 30px;
-    color: #000;
 }
 
 /* services coverpage ends */
@@ -1019,6 +1054,8 @@ p.slogan{
 .hovereffect img {
     display: block;
     position: relative;
+    height: 250px;
+    object-fit: cover;
 }
 
 .hovereffect h3 {
@@ -1046,7 +1083,7 @@ p.slogan{
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    color: #f53240;
+    color: #fff700;
     border: 1px solid #fff;
     background-color: transparent;
     opacity: 0;
@@ -1058,7 +1095,7 @@ p.slogan{
     transition: all 0.4s ease-in-out;
     font-weight: normal;
     margin: -52px 20px 0 20px;
-    padding: 62px 10px;
+    padding: 62px 10px 20px;
 }
 
 .hovereffect:hover a.info {
@@ -1115,7 +1152,7 @@ p.slogan{
 }
 .testimonials-coverpage{
     position: relative;
-    padding: 160px 0;
+    padding: 175px 0;
     padding-left: 50%;
     color: #fff;
 }
@@ -1128,35 +1165,6 @@ p.slogan{
 .testimonials-coverpage p{
     font-size: 20px;
     margin: 5px 0;
-    
-}
-p.slogan{
-    font-family: 'Norican', cursive;
-    font-size: 40px;
-    color: #8e5500;
-    text-transform: uppercase;
-}
-.testimonials-coverpage .btn{
-    padding: 5px 10px;
-    background: none;
-    text-decoration: none;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 30px;
-    margin-right: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-top: 10px;
-}
-.testimonials-coverpage .btn:hover{
-    background-color: #fff;
-    color: #000;
-}
-.testimonials-coverpage .btn-transparent:hover{
-    background-color: #fff;
-    border-radius: 30px;
-    color: #000;
 }
 
 /* contact page begins */
@@ -1170,11 +1178,10 @@ p.slogan{
 }
 .contact-coverpage{
     position: relative;
-    padding: 160px 0;
+    padding: 175px 0;
     padding-left: 50%;
     text-align: left;
     color: #fff;
-
 }
 .contact-coverpage h3{
     font-size: 36px;
@@ -1185,35 +1192,12 @@ p.slogan{
 .contact-coverpage p{
     font-size: 20px;
     margin: 5px 0;
-    
 }
-p.slogan{
-    font-family: 'Norican', cursive;
-    font-size: 40px;
-    color: #8e5500;
-    text-transform: uppercase;
-}
-.contact-coverpage .btn{
-    padding: 5px 10px;
-    background: none;
-    text-decoration: none;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 30px;
-    margin-right: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-top: 10px;
-}
-.contact-coverpage .btn:hover{
-    background-color: #fff;
-    color: #000;
-}
-.contact-coverpage .btn-transparent:hover{
-    background-color: #fff;
-    border-radius: 30px;
-    color: #000;
+.contact-appointment{
+    background-color: #1fb58f;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
 }
 .map-contact-background{
     background-color: #8fd8d2;
@@ -1223,7 +1207,6 @@ p.slogan{
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 30px 0;
-    
 }
 .map, .contact-table{
 	width: 45%;
@@ -1280,14 +1263,8 @@ p.slogan{
 
 /* quaries section ends */
 
-
-
-
-
+/* login modal section */
 .login-coverpage{
-    height: 100vh;
-    padding: 0;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1295,7 +1272,7 @@ p.slogan{
 .login-page{
     background-color:#66b9bf;
     padding: 20px;
-    width: 35%;
+    width: 55%;
     color: #fff;
 }
 .login-page-header{
@@ -1355,9 +1332,7 @@ p.slogan{
     display: flex;
     justify-content: space-between;
 }
-/* .gender input{
-    margin-left: 50px;
-} */
+
 .login-page a{
     color: rgb(68, 68, 142);
 }
@@ -1378,42 +1353,11 @@ p.slogan{
     border-radius: 5px;
     margin-top: 10px;
 }
-
-/* 
-<a class="effect effect-5" href="#" title="Learn More">Learn More</a>
-.effect.effect-5 {
-    transition: all 0.2s linear 0s;
-    
-    &:before {
-      content: "\f054";
-      font-family: FontAwesome;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0px;
-      height: 100%;
-      width: 30px;
-      background-color: rgba($overlay-color,0.3);
-      border-radius: 0 50% 50% 0;
-      transform: scale(0,1);
-      transform-origin: left center;
-      transition: all 0.2s linear 0s;
-    }
-    
-     &:hover {
-      text-indent: 30px;
-      
-      &:before {
-        transform: scale(1,1);
-        text-indent: 0;
-      }
-    }
-  } */
+/* login modal section ends */
 
 
-@media screen and (max-width:767px) {
+
+@media screen and (max-width:1023px) {
     h1{
         font-size: 24px;
     }
@@ -1427,7 +1371,9 @@ p.slogan{
     .header-contact p{
         display: none;
     }
-    
+    .user-login{
+        margin-left: 60px;
+    }
     .logo{
         width: 50%;
     }
@@ -1492,7 +1438,7 @@ p.slogan{
         width: 100%;
     }
     .services-detail-left .card{
-        width: 47%;
+        width: 46%;
         padding: 30px 25px;
     }
     .services-detail-right{
@@ -1558,6 +1504,7 @@ p.slogan{
     .about-homepage-left{
         width: 100%;
     }
+    
     .about-homepage-right{
         width: 100%;
     }
@@ -1639,3 +1586,46 @@ p.slogan{
     }
     /* login page ends */
 }
+
+/* appointment modal section starts */
+#myBtn, #myLogin{
+    cursor: pointer;
+}
+.modal, .loginmodal  {
+    display: none; 
+    position: fixed;
+    z-index: 10000; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(112, 112, 112, 0.9);
+  }
+  .loginmodal {
+    z-index: 10001; 
+  }
+  /* Modal Content */
+  .modal-content, .loginmodal-content{
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* The Close Button */
+  .close, .loginclose{
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus, .loginclose:hover, .loginclose:focus {
+    color: #f7f7f7;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* appointment modal section ends */

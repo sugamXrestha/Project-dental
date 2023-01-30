@@ -35,7 +35,14 @@
                         <img src="images/clock.png" alt="">
                         <p>12:00 pm - 8:00 pm</p>
                     </div>
+                    <a href="form.html">
+                        <div class="user-login">
+                            <img src="images/user.png" alt="">
+                            <a id="myLogin">Login</a>
+                        </div>
+                    </a>
                 </div>
+                
             </div>
         </div>
     </header>
@@ -62,7 +69,7 @@
                     </ul>
                 </nav>
                 <div class="nav-appointment">
-                    <a href="form.html">Appointment</a>
+                    <div id="myBtn">Appointment</div>
                 </div>
                 <div class="mobile-screen">
                     <button class="openbtn" onclick="openNav()">☰</button>
@@ -74,6 +81,7 @@
                         <a href="services.html">Services</a>
                         <a href="testimonials.html">Testimonials</a>
                         <a href="contact.html">Contact</a>
+                        <a href="contact.html#appointment-table">Appointment</a>
                       </div>
                 </div>
                 </div>
@@ -99,11 +107,11 @@
 
     <section class="homepage-background">
         <div class="container">
-            <div class="homepage">
+            <div class="homepage coverpage">
                 <h1>WELCOME TO FAMILY DENTAL CARE</h1>
                 <h3>Best Dental Care <br> In Your City</h3>
                 <p class="slogan">We’re your dental defenders.</p>
-                <a href="form.html" class="btn btn-transparent">Appointment</a>
+                <a href="contact.html#appointment-table" class="btn btn-transparent">Appointment</a>
                 <a href="#" class="btn">Call or text +977 9823454159</a>
             </div>
         </div>
@@ -131,7 +139,7 @@
                     <img src="images/appointment.png" alt="">
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id tempore animi .</p>
-                <p class="btn"><a href="form.html">Requests</a></p>
+                <a class="learn-more" href="contact.html#appointment-table">Requests</a>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -139,7 +147,7 @@
                     <img src="images/dentist.png" alt="">
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id tempore animi .</p>
-                <p class="btn"><a href="#">Requests</a></p>
+                <a class="learn-more" href="#">Find doctors</a>
             </div>
             <div class="card">
                 <div class="card-header">
@@ -147,7 +155,7 @@
                     <img src="images/location.png" alt="">
                 </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id tempore animi .</p>
-                <p class="btn"><a href="#">Requests</a></p>
+                <a class="learn-more" href="#">Visits</a>
             </div>
         </div>
     </div>
@@ -168,7 +176,7 @@
                     <h3>Best Medical Care For<br> Yourself and Your Family</h3>
                     <p>Welcome to Bowles Dental, where you’ll find high-quality dental care for your whole family. From your dentists, Drs. Chad Bowles and Brad Higgerson, to your hygienist and front office team, everyone here is committed to exceeding your expectations.<br>
                     You’ll feel right at home in our convenient Overland Park family dentist office thanks to our focus on your comfort, health, and happiness.</p>
-                    <p class="btn"><a href="#">Learn more</a></p>
+                    <a href="#" class="btn learn-more">Learn more</a>
                     <div class="about-us-detail">
                         <div class="about-us-detail-circle">
                             <a href="#">
@@ -278,8 +286,8 @@
                     </div>
                     <div class="services-detail-description">
                         <h3>Orthodontic Treatment - Correction of Irregular Teeth</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae corrupti veritatis porro! Explicabo totam minus magnam deleniti quaerat cupiditate sed, obcaecati, repudiandae debitis pariatur aliquam architecto perferendis consectetur laborum exercitationem?</p>
-                        <p class="btn"><a href="#">Learn more</a></p>
+                        <p>Orthodontics is a dental specialty focused on aligning your bite. Orthodontic treatments include traditional braces, clear aligners and removable retainers. Clear braces work the same as traditional metal braces, but they’re less noticeable. They consist of clear ceramic brackets and tooth-colored wire. Braces can correct a wide range of dental issues, including crooked, gapped, rotated or crowded teeth.</p>
+                        <a href="#" class="learn-more">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -360,7 +368,7 @@
                         <p>Hello guys, I am Dhan from Sirbistana. I am senior art director and founder of Violetta.</p>
                     </div>
                 </div>
-                <p class="btn"><a href="#">See more</a></p>
+                <a href="#" class="learn-more">See more</a>
             </div>
         </div>
     </section>
@@ -459,5 +467,200 @@
             </div>
         </div>
     </footer>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="appointment-table">
+        <span class="close">&times;</span>
+        <h3>Book An Appointment</h3>
+        <div class="choose-service">
+            <input type="text" placeholder="Choose Services">
+        </div>
+        <div class="choose-name-email">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+        </div>
+        <div class="choose-date-time">
+            <input type="date">
+            <input type="time">
+        </div>
+        <div>
+            <p class="btn"><a href="#">Submit</a></p>
+            <p class="btn"><a href="#">Cancel</a></p>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        
+        var btn = document.getElementById("myBtn");
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+<!-- login modal -->
+
+<div id="myLoginModal" class="loginmodal">
+
+    <!-- Modal content -->
+    <div class="loginmodal-content">
+        <div class="login-coverpage">
+            <form action="" class="login-page">
+                <div class="login-page-header">
+                    <div class="login-page-title">
+                        <h3>Sign Up</h3>
+                        <p>It’s quick and easy.</p>
+                    </div>
+                    <span class="loginclose">&times;</span>
+                </div>
+                <div class="form-control name">
+                    <input type="text" class="firstname" placeholder="FirstName">
+                    <input type="text" class="lastname" placeholder="LastName">
+                </div>
+                <div class="form-control">
+                    <input type="email number" placeholder="Your email or phone number" class="email-number">
+                </div>
+                <div class="form-control">
+                    <input type="password" placeholder="Password">
+                </div>
+                <p>Birthday</p>
+                <div class="form-control birthday">
+                    <select name="month" id="month">
+                        <option selected disabled>Month</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+
+                    <select name="day" id="day">
+                        <option selected disabled>Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+
+                    <select name="year" id="year">
+                        <option selected disabled>Year</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+                <p>Gender</p>
+                <div class="gender">
+                    <label>Male<input type="radio" name="gender" value="Male" checked></label>
+                    <label>Female<input type="radio" name="gender" value="Female"></label>
+                    <label>Others<input type="radio" name="gender" value="Others"></label>
+                </div>
+                <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a> </p>
+                <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>  
+                <div class="sign-up">
+                    <input type="submit" value="Sign up">
+                </div>  
+                
+            </form>
+        </div>
+    </div>
+</div>
+  
+      <script>
+          var loginmodal = document.getElementById("myLoginModal");
+          
+          var btn = document.getElementById("myLogin");
+          
+          var span = document.getElementsByClassName("loginclose")[0];
+          
+          btn.onclick = function() {
+            loginmodal.style.display = "block";
+          }
+          
+          span.onclick = function() {
+            loginmodal.style.display = "none";
+          }
+          
+          window.onclick = function(event) {
+            if (event.target == loginmodal) {
+              loginmodal.style.display = "none";
+            }
+          }
+          </script>
+
 </body>
 </html>
