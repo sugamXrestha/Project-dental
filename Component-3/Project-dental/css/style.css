@@ -41,13 +41,12 @@ a{
 /* header section starts */
 
 header{
-    background-color: #26ccc3;
+    background-color: #00d1ff;
     width: 100%;
    
 }
 
 .logo-contact-section{
-    background-color: #26ccc3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +70,6 @@ header{
 }
 .header-contact img{
     color: #fff;
-    background: #22C3E6;
     padding: 5px;
     border-radius: 5px;
 }
@@ -89,7 +87,7 @@ header{
 /* navigation section starts */
 
 .navigation-background{
-    background: #00d1ff;
+    background: #fff;
     position: sticky;
     top: 0;
     z-index: 99;
@@ -115,23 +113,27 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     display: inline-block;
-    color: #fff;
+    color: #00d1ff;
     font-size: 18px;
     padding: 2px 10px;
     transition: 0.8s;
 }
 nav ul a:hover, nav ul .active{
     background-color: #00ffe7;
-    box-shadow: 2px 2px 0 #fff;
-    color: #565656;
+    box-shadow: 2px 2px 2px rgb(91, 86, 86);
+    color: #4c61b5;
 }
 .nav-appointment a{
     text-decoration: none;
-    color: #000000;
+    color: #fff;
+}
+.nav-appointment a:hover{
+    color: #4c61b5;
+
 }
 .nav-appointment{
     text-decoration: none;
-    background: #fff;
+    background: #00d1ff;
     padding: 4px 10px;
     font-size: 18px;
     border-radius: 30px;
@@ -140,9 +142,10 @@ nav ul a:hover, nav ul .active{
     position: relative;
   }
   
-  .nav-appointment:hover {
+  .nav-appointment:hover{
     box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
     background-color: #00ffe7;
+    color: #4c61b5;
   }
   
   .nav-appointment:hover::before, .nav-appointment:hover::after {
@@ -355,9 +358,13 @@ nav ul a:hover, nav ul .active{
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .table .first{
     background: #f24c4e;
+    justify-content: flex-start;
 }
 .table .card h3{
     font-size: 26px;
@@ -372,7 +379,7 @@ nav ul a:hover, nav ul .active{
 }
 .table .learn-more {
    background-color: rgb(229, 42, 111);
-  border-radius: 30px;
+  border-radius: 10px;
   display: block;
   width: unset;
 }
@@ -385,7 +392,7 @@ nav ul a:hover, nav ul .active{
 /* about us section starts */
 
 .about-background{
-    background-color: #7cdbd5;
+    background-color: #cae4db;
 }
 .about-us{
     display: flex;
@@ -578,7 +585,7 @@ nav ul a:hover, nav ul .active{
     width: 50%;
 }
 .appointment-content p{
-    color: #fedcd2;
+    color: #fff;
 }
 
 
@@ -587,7 +594,9 @@ nav ul a:hover, nav ul .active{
     margin-top: 20px;
     font-size: 18px;
     border-radius: 30px;
-    border: 2px solid #000;
+    border: 2px solid #fff;
+    background: #fff;
+
     color: #000;
     display: inline-block;
     transition: 0.5s;
@@ -597,8 +606,7 @@ nav ul a:hover, nav ul .active{
     color: #000;
 }
 .appointment-content .btn:hover{
-    background: #22C3E6;
-    border: 2px solid #fff;
+    background: none;
 }
 .appointment-table{
     width: 49%;
@@ -616,29 +624,23 @@ nav ul a:hover, nav ul .active{
     background: #e7e6e6;
     border: none;
 }
-.appointment-table .choose-name-email, .appointment-table .choose-date-time{
+.appointment-table .choose-name-email, .appointment-table .choose-date-time, .appointment-table .submit-cancel {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.appointment-table .btn{
+.appointment-table .submit-cancel input{
     padding: 10px 50px;
     margin-top: 10px;
     font-size: 18px;
-    background-color: #e52a6f;
+    background-color: #00d1ff;
     border-radius: 30px;
     color: #fff;
     display: inline-block;
-    margin: 0 20px;
     transition: 0.5s;
 }
-.appointment-table a{
-    text-decoration: none;
-    color: #fff;
-}
-.appointment-table .btn:hover{
-    color: #000;
-    background: #26ccc3;
+.appointment-table .submit-cancel input:hover{
+    background-color: rgba(7, 136, 155, 0.5)
 }
 
 /* appointment section ends  */
@@ -646,7 +648,7 @@ nav ul a:hover, nav ul .active{
 /* our dentist section starts */
 
 .our-dentists-background{
-    background: #7cdbd5;
+    background: #cae4db;
 }
 .our-dentists{
     text-align: center;
@@ -731,7 +733,7 @@ nav ul a:hover, nav ul .active{
 /* footer menu section starts */
 
 .footer-menu-background{
-    background-color: #7cdbd5;
+    background-color: #cae4db;
 }
 .footer-menu{
     padding: 30px 0;
@@ -742,20 +744,21 @@ nav ul a:hover, nav ul .active{
     width: 49%;
 }
 .footer-menu p{
-    color: #fff;
+    color: #2f2f2f;
     cursor: pointer;
 }
 .footer-contact .contact, .footer-contact .mail{
     display: flex;
     align-items: center;
+    gap: 10px;
+    margin: 10px 0;
 }
 .footer-contact img{
     color: #fff;
     display: inline-block;
     background-color: #22C3E6;
-    padding: 10px;
+    padding: 5px;
     border-radius: 50%;
-    margin: 0 10px 10px 0;
 }
 
 /* footer menu section ends */
@@ -808,7 +811,7 @@ p.slogan{
 /* about homepage section starts */
 
 .about-homepage-background{
-    background-color: #7cdbd5;
+    background-color: #1fb58f;
 }
 .about-homepage{
     display: flex;
@@ -816,10 +819,10 @@ p.slogan{
     flex-wrap: wrap;
     padding: 30px 0;
     box-sizing: border-box;
-    color: #df744a;
+    color: #fff;
 }
 .about-homepage p{
-    color: #c98474;
+    color: #000;
 }
 .about-homepage-left{
     width: 55%;
@@ -888,7 +891,7 @@ p.slogan{
 /* our-office section starts */
 
 .our-office-background{
-    background-color: #8fd8d2;
+    background-color: #fff;
 }
 .our-office {
     display: flex;
@@ -948,7 +951,7 @@ p.slogan{
 /* services homepage starts */
 
 .services-homepage-background{
-    background-color: #02C8BB;
+    background-color: #cae4db;
     padding: 50px 150px;
 }
 .services-homepage{
@@ -1010,7 +1013,7 @@ p.slogan{
 /* services-help starts */
 
 .services-help-background{
-    background-color: #a7d2cb;
+    background-color: #cae4db;
 }
 .services-help{
     text-align: center;
@@ -1114,7 +1117,7 @@ p.slogan{
 /* see you soon section starts */
 
 .see-you-background{
-    background-color: #26CCC3;
+    background-color: #1fb58f;
     padding: 30px 0;
 }
 .see-you{
@@ -1125,9 +1128,9 @@ p.slogan{
     padding: 10px 20px;
     margin-top: 10px;
     font-size: 18px;
-    background: #df744a;
+    background: #fff;
     border-radius: 30px;
-    color: #fff;
+    color: #00d1ff;
     display: inline-block;
     transition: 0.5s;
 }
@@ -1137,7 +1140,7 @@ p.slogan{
 }
 .see-you .btn:hover{
     color: #000;
-    background: #26ccc3;
+    background: #00d1ff;
 }
 
 /* see you soon section ends */
@@ -1200,7 +1203,7 @@ p.slogan{
     justify-content: center;
 }
 .map-contact-background{
-    background-color: #8fd8d2;
+    background-color: #cae4db;
 }
 .map-contact{
     display: flex;
@@ -1237,28 +1240,28 @@ p.slogan{
     background-color: #1fb58f;
     padding: 30px 0;
 }
-.quaries input, textarea{
+.quaries .form-control input, textarea{
     width: 100%;
     padding: 5px;
     margin: 10px 0;
 }
-.quaries .btn{
+.quaries .send-btn input{
     padding: 10px 20px;
     margin-top: 10px;
     font-size: 18px;
-    background: #22C3E6;
-    border-radius: 15px;
+    background: #008915;
+    border-radius: 8px;
     color: #fff;
     display: inline-block;
     transition: 0.5s;
+    border: none;
 }
 .quaries a{
     text-decoration: none;
     color: rgb(201, 53, 53);
 }
-.quaries .btn:hover{
-    color: #000;
-    background: #26ccc3;
+.quaries .send-btn input:hover{
+    background: #004485;
 }
 
 /* quaries section ends */
@@ -1271,90 +1274,236 @@ p.slogan{
 }
 .login-page{
     background-color:#66b9bf;
-    padding: 20px;
-    width: 55%;
+    width: 35%;
+    padding: 30px;
     color: #fff;
+    text-align: center;
+    border-radius: 3px;
 }
 .login-page-header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border-bottom: 1px solid #fff;
+    text-align: center;
 }
-.login-page-title{
-    padding-bottom: 10px;
+.login-page-title img{
+    width: 50px;
+    height: 50px;
 }
 .login-page-title h3{
-    font-size: 34px;
-}
-.login-page-header .times{
-    font-size: 24px;
-    cursor: pointer;
-}
-.login-page-header .times:hover{
-    color: #bcbcbc;
+    font-size: 28px;
 }
 .form-control{
-    padding: 5px;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
     margin: 10px 0;
-    gap: 10px;
 }
-.form-control input, .birthday select{
+.form-control input{
     width: 100%;
-    height: 35px;
+    margin-top: 10px;
+    padding: 9px;
     border: none;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 6px;
+    outline-color: #00d1ff;
 }
-.login-page .form-control select{
-    display: flex;
-    justify-content: space-between;
+.form-control input::placeholder{
+    color: #9c9c9c;
 }
-.login-page .form-control #day option{
-    width: 14%;
-    display: inline-block;
-}
-.gender{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-.gender label{
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #fff;
-    color: #000;
-    width: 32%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .login-page a{
-    color: rgb(68, 68, 142);
+    color: rgb(12, 0, 248);
+    font-size: 13px;
 }
-.login-page p{
-    font-size: 14px;
+.login-page a:hover{
+    text-decoration: underline;
 }
 .login-page .sign-up{
-    display: flex;
-    justify-content: center;
     margin-top: 10px;
+    display: block;
 }
 .login-page .sign-up input{
-    padding: 10px 20px;
+    width: 100%;
+    padding: 7px 20px;
     background-color: #008915;
-    color: #fff;
+    color: rgb(230, 230, 230);
     font-size: 20px;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
+    transition: 0.3s;
 }
+.login-page .sign-up input:hover{
+    background-color: #004485;
+    color: #fff;
+}
+#myLogin{
+    cursor: pointer;
+}
+.loginmodal  {
+    display: none; 
+    position: fixed;
+    z-index: 10000; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(112, 112, 112, 0.9);
+  }
+  /* Modal Content */
+.loginmodal-content{
+    width: 100vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* The Close Button */
+.loginclose{
+    color: #f7f7f7;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+.loginclose:hover, .loginclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 /* login modal section ends */
 
+/* dashboard pages starts */
+
+.dashboard{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+}
+.dashboard .dashboard-logo{
+    width: 20%;
+    padding: 10px;
+    background-color: #00d1ff;
+}
+.dashboard .dashboard-menu{
+    width: 80%;
+    padding: 10px 40px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard .dashboard-menu .search-bar{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.dashboard .dashboard-menu .search-bar input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 30px;
+    outline-color: #00d1ff;
+    border: 1px solid #00d1ff;
+}
+.dashboard .dashboard-menu .search-bar img{
+    position: absolute;
+    right: 10px;
+}
+.dashboard .dashboard-menu .admin, .dashboard .dashboard-menu .profile{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.dashboard .dashboard-menu .admin img{
+    background-color: #00d1ff;
+    border-radius: 50%;
+}
+.dashboard .dashboard-menu .admin::after{
+    content: '\002b9f';
+}
+aside{
+    width: 20%;
+    padding: 10px;
+    position: fixed;
+    top: 74px;
+}
+aside a{
+    color: #00d1ff;
+    text-align: center;
+    margin: 15px ;
+}
+aside .admin{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+aside .admin img{
+    background-color: #00d1ff;
+    border-radius: 50%;
+}
+aside .aside-menu li a{
+    display: flex;
+    gap: 10px;
+    color: #7b7777;
+    position: relative;
+    margin-top: 20px;
+}
+aside .aside-menu li a::after{
+    content: '\0002c3';
+    position: absolute;
+    right: 0;
+}
+aside .aside-menu li a:hover{
+    color: #000;
+}
+main{
+    background-color: #d7d7d7;
+    position: absolute;
+    top: 74px;
+    left: 20%;
+    width: 80%;
+    height: 100vh;
+    padding: 10px 40px 10px 20px;
+}
+main .main-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .main-content{
+    display: flex;
+    justify-content: space-between;
+}
+main .main-content .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px ;
+    color: #fff;
+    font-size: 13px;
+}
+main .main-content .card img{
+    background-color: rgba(247, 247, 247, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+}
+main .main-content .appointment{
+    background-color: #f24c4e;
+}
+main .main-content .new-patients{
+    background-color: #00d1ff;
+}
+main .main-content .operations{
+    background-color: #396ec0;
+}
+main .main-content .earning{
+    background-color: #1b7b34;
+}
+/* dashboard pages starts */
 
 
 @media screen and (max-width:1023px) {
@@ -1469,12 +1618,11 @@ p.slogan{
     .appointment-table input{
         width: 100%;
     }
-    .appointment-table .btn{
+    .appointment-table .submit-cancel input{
+        margin-bottom: 0;
         padding: 10px 20px;
         font-size: 14px;
     }
-
-
     .dentists-detail{
         width: 100%;
         margin-bottom: 10px;
@@ -1587,45 +1735,3 @@ p.slogan{
     /* login page ends */
 }
 
-/* appointment modal section starts */
-#myBtn, #myLogin{
-    cursor: pointer;
-}
-.modal, .loginmodal  {
-    display: none; 
-    position: fixed;
-    z-index: 10000; 
-    left: 0;
-    top: 0;
-    width: 100vw; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(112, 112, 112, 0.9);
-  }
-  .loginmodal {
-    z-index: 10001; 
-  }
-  /* Modal Content */
-  .modal-content, .loginmodal-content{
-    width: 100vw;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* The Close Button */
-  .close, .loginclose{
-    color: #000000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus, .loginclose:hover, .loginclose:focus {
-    color: #f7f7f7;
-    text-decoration: none;
-    cursor: pointer;
-  }
-/* appointment modal section ends */
