@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     scroll-margin-top: 100px;
+    scrollbar-darkshadow-color: rgb(249, 0, 0);
 }
 .container{
     margin: 0 auto;
@@ -24,7 +25,6 @@ h3{
 }
 a{
     text-decoration: none;
-    color: #fff;
 }
 .background{
     background-image: url(../images/brushing.webp);
@@ -80,6 +80,7 @@ header{
 }
 .user-login{
     margin-left: 100px;
+    color: #fff;
 }
 
 /* header section starts */
@@ -91,6 +92,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 99;
+    border-bottom: 1px solid #00d1ff;
 }
 .navigation{
     display: flex;
@@ -113,7 +115,7 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     display: inline-block;
-    color: #00d1ff;
+    color: #000cff;
     font-size: 18px;
     padding: 2px 10px;
     transition: 0.8s;
@@ -339,7 +341,7 @@ nav ul a:hover, nav ul .active{
 /* table section starts */
 
 .table-background{
-    background: #1fb58f;
+    background: #f6f6f6;
 }
 .table{
     display: flex;
@@ -361,10 +363,12 @@ nav ul a:hover, nav ul .active{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 2px 2px #f00;
 }
 .table .first{
     background: #f24c4e;
     justify-content: flex-start;
+    box-shadow: 2px 2px rgb(0, 0, 0);
 }
 .table .card h3{
     font-size: 26px;
@@ -392,7 +396,7 @@ nav ul a:hover, nav ul .active{
 /* about us section starts */
 
 .about-background{
-    background-color: #cae4db;
+    background-color: #e6fff6;
 }
 .about-us{
     display: flex;
@@ -415,7 +419,7 @@ nav ul a:hover, nav ul .active{
 .about-us-content h3{
     font-size: 32px;
     margin: 5px 0;
-    color: #fff;
+    color: #000;
     
 }
 .about-us-detail{
@@ -506,7 +510,7 @@ nav ul a:hover, nav ul .active{
 /* services section starts */
 
 .services-background{
-    background-color: #cae4db;
+    background-color: #e6fff6;
 }
 .services{
     padding-bottom: 30px;
@@ -534,10 +538,14 @@ nav ul a:hover, nav ul .active{
     text-align: center;
     padding: 30px 25px;
     border-radius: 10px;
+    box-shadow: 2px 2px #3963c0;
 }
 .services-detail-left .first{
     background: #396ec0;
     color: #fff;
+}
+.services-detail-left .card:hover{
+    opacity: 0.8;
 }
 .services-detail-left .first img{
     background: #5285d8;
@@ -572,7 +580,7 @@ nav ul a:hover, nav ul .active{
 /* appointment section starts */
 
 .appointment-background{
-    background: #1fb58f;
+    background: #f6f6f6;
 }
 .appointment-section{
     display: flex;
@@ -585,7 +593,7 @@ nav ul a:hover, nav ul .active{
     width: 50%;
 }
 .appointment-content p{
-    color: #fff;
+    color: #7a7a2d;
 }
 
 
@@ -594,8 +602,8 @@ nav ul a:hover, nav ul .active{
     margin-top: 20px;
     font-size: 18px;
     border-radius: 30px;
-    border: 2px solid #fff;
-    background: #fff;
+    border: 2px solid #00d1ff;
+    background: #00d1ff;
 
     color: #000;
     display: inline-block;
@@ -648,7 +656,7 @@ nav ul a:hover, nav ul .active{
 /* our dentist section starts */
 
 .our-dentists-background{
-    background: #cae4db;
+    background: #e6fff6;
 }
 .our-dentists{
     text-align: center;
@@ -685,7 +693,7 @@ nav ul a:hover, nav ul .active{
 /* testimonial section starts */
 
 .testimonial-background{
-    background: #1fb58f;
+    background: #f6f6f6;
 }
 .testimonial{
     text-align: center;
@@ -704,9 +712,10 @@ nav ul a:hover, nav ul .active{
     
 }
 .testimonial-comment{
-    background-color: #fff;
+    background-color: #22c3e624;
     padding: 10px;
     color: #565656;
+    box-shadow: 1px 1px;
 }
 .testimonial-comment h3{
     color: #000;
@@ -733,7 +742,7 @@ nav ul a:hover, nav ul .active{
 /* footer menu section starts */
 
 .footer-menu-background{
-    background-color: #cae4db;
+    background-color: #e6fff6;
 }
 .footer-menu{
     padding: 30px 0;
@@ -767,9 +776,11 @@ nav ul a:hover, nav ul .active{
 
 footer{
     background-color: #26ccc3;
+    padding: 15px 0;
 }
 .copyright{
     color: #565656;
+    text-align: center;
 }
 /* footer section ends */
 
@@ -811,7 +822,7 @@ p.slogan{
 /* about homepage section starts */
 
 .about-homepage-background{
-    background-color: #1fb58f;
+    background-color: #f6f6f6;
 }
 .about-homepage{
     display: flex;
@@ -819,7 +830,7 @@ p.slogan{
     flex-wrap: wrap;
     padding: 30px 0;
     box-sizing: border-box;
-    color: #fff;
+    color: #c98474;
 }
 .about-homepage p{
     color: #000;
@@ -829,7 +840,7 @@ p.slogan{
 }
 .about-homepage-left-detail{
     position: sticky;
-    top: 30px;
+    top: 85px;
 }
 .about-homepage-right{
     width: 40%;
@@ -851,13 +862,13 @@ p.slogan{
 /* meet our team section starts */
 
 .our-team-background{
-    background-color: #cae4db;;
+    background-color: #e6fff6;;
 }
 .our-team-title{
     text-align: center;
     padding: 30px 0 15px;
     font-size: 20px;
-    color: #1fb58f;
+    color: #1b7b34;
     border-bottom: 1px solid #1b7b34;
 }
 .our-team-content{
@@ -951,7 +962,7 @@ p.slogan{
 /* services homepage starts */
 
 .services-homepage-background{
-    background-color: #cae4db;
+    background-color: #e6fff6;
     padding: 50px 150px;
 }
 .services-homepage{
@@ -962,7 +973,7 @@ p.slogan{
     padding: 60px 70px;
     background-color: #8fd8d2;
     border-radius: 80px;
-    color: #c98474;
+    color: #000;
 }
 
 .services-homepage-images{
@@ -982,7 +993,7 @@ p.slogan{
 /* services homepage starts */
 
 .services-process-background{
-    background-color: #1fb58f;
+    background-color: #f6f6f6;
     padding: 50px 150px;
 }
 .services-process{
@@ -991,9 +1002,10 @@ p.slogan{
     flex-wrap: wrap;
     align-items: center;
     padding: 60px 70px;
-    background-color: #cae4db;
+    background-color: #e6fff6;
     border-radius: 80px;
     color: #f24c4e;
+    box-shadow: 1px 1px;
 }
 
 .services-process-images{
@@ -1013,7 +1025,7 @@ p.slogan{
 /* services-help starts */
 
 .services-help-background{
-    background-color: #cae4db;
+    background-color: #e6fff6;
 }
 .services-help{
     text-align: center;
@@ -1117,12 +1129,12 @@ p.slogan{
 /* see you soon section starts */
 
 .see-you-background{
-    background-color: #1fb58f;
+    background-color: #f6f6f6;
     padding: 30px 0;
 }
 .see-you{
     text-align: center;
-    color: #fff;
+    color: #c98474     ;
 }
 .see-you .btn{
     padding: 10px 20px;
@@ -1197,13 +1209,13 @@ p.slogan{
     margin: 5px 0;
 }
 .contact-appointment{
-    background-color: #1fb58f;
+    background-color: #f6f6f6;
     padding: 50px 0;
     display: flex;
     justify-content: center;
 }
 .map-contact-background{
-    background-color: #cae4db;
+    background-color: #e6fff6;
 }
 .map-contact{
     display: flex;
@@ -1237,13 +1249,15 @@ p.slogan{
 /* quaries section starts */
 
 .quaries-background{
-    background-color: #1fb58f;
+    background-color: #f6f6f6;
     padding: 30px 0;
 }
 .quaries .form-control input, textarea{
     width: 100%;
     padding: 5px;
     margin: 10px 0;
+    box-shadow: 1px 1px 5px #00d1ff;
+    outline-color: #00d1ff;
 }
 .quaries .send-btn input{
     padding: 10px 20px;
@@ -1465,7 +1479,6 @@ main{
     top: 74px;
     left: 20%;
     width: 80%;
-    height: 100vh;
     padding: 10px 40px 10px 20px;
 }
 main .main-title{
@@ -1502,6 +1515,62 @@ main .main-content .operations{
 }
 main .main-content .earning{
     background-color: #1b7b34;
+}
+main .charts{
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    height: 350px;
+}
+main .charts .charts-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+main .appointment-recent, main .appointment-recent .appointment-request-title, main .appointment-recent .recent-patient .recent-patient-title{
+    display: flex;
+    justify-content: space-between;
+}
+main .appointment-recent .appointment-request, main .appointment-recent .recent-patient{
+    width: 49%;
+    background-color: #fff;
+    padding: 10px;
+}
+main .appointment-recent img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+main .appointment-recent .appointment-request .appointment-request-detail{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+main p{
+    font-size: 13px;
+}
+main span{
+    font-size: 12px;
+    color: #676767;
+}
+main .recent-patient .recent-patient-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .recent-patient .recent-patient-detail{
+    display: grid;
+    align-items: center;
+    margin-top: 10px;
+    grid-template-columns: 2.5fr 1.2fr 1fr 1fr 1fr 1fr;
+}
+main .recent-patient .patient-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 /* dashboard pages starts */
 

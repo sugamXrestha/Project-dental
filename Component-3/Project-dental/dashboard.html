@@ -120,7 +120,7 @@
                 </div>
             </div>
             <div class="card new-patients">
-                <img src="images/dashboard-images/other-staff.png" alt="" >
+                <img src="images/dashboard-images/patients.png" alt="" >
                 <div class="card-detail">
                     <h4>New Patients</h4>
                     <p>50</p>
@@ -136,15 +136,339 @@
                 </div>
             </div>
             <div class="card earning">
-                <img src="images/dashboard-images/other-staff.png" alt="" >
+                <img src="images/dashboard-images/payments.png" alt="" >
                 <div class="card-detail">
                     <h4>Clinic Earnings</h4>
                     <p>450</p>
                     <p>45% increases in 2...</p>
                 </div>
             </div>
-
         </div>
+
+        <section class="charts">
+            <div class="charts-title">
+                <h3>Patient Status</h3>
+                <p>This Year</p>
+            </div>
+        </section>
+
+        <section class="appointment-recent">
+            <div class="appointment-request">
+                <div class="appointment-request-title">
+                    <h4>Appointment Request</h4>
+                    <p><a href="#">See all</a></p>
+                </div>
+                <div class="appointment-request-detail">
+                    <img src="images/testimonial-profile.jpg" alt="">
+                    <div>
+                        <p>Daniel Crish</p>
+                        <span>Bleaching</span>
+                    </div>
+                    <p>9844075750</p>
+                    <p>01/02/2021 </p>
+                    <p> 9 AM</p>
+                </div>
+                <div class="appointment-request-detail">
+                    <img src="images/our-dentist.jpg" alt="">
+                    <div>
+                        <p>Daniel Crish</p>
+                        <span>Bleaching</span>
+                    </div>
+                    <p>9844075750</p>
+                    <p>01/02/2021 </p>
+                    <p> 9 AM</p>
+                </div>
+                <div class="appointment-request-detail">
+                    <img src="images/testimonial-profile.jpg" alt="">
+                    <div>
+                        <p>Daniel Crish</p>
+                        <span>Bleaching</span>
+                    </div>
+                    <p>9844075750</p>
+                    <p>01/02/2021</p>
+                    <p> 9 AM</p>
+                </div>
+                <div class="appointment-request-detail">
+                    <img src="images/services-description2.jpg" alt="">
+                    <div>
+                        <p>Daniel Crish</p>
+                        <span>Bleaching</span>
+                    </div>
+                    <p>9844075750</p>
+                    <p>01/02/2021</p>
+                    <p> 9 AM</p>
+                </div>
+                <div class="appointment-request-detail">
+                    <img src="images/our-dentist.jpg" alt="">
+                    <div>
+                        <p>Daniel Crish</p>
+                        <span>Bleaching</span>
+                    </div>
+                    <p>9844075750</p>
+                    <p>01/02/2021 </p>
+                    <p> 9 AM</p>
+                </div>
+            </div>
+            <div class="recent-patient">
+                <div class="recent-patient-title">
+                    <h4>Recent Patients</h4>
+                    <p><a href="#">See all</a></p>
+                </div>
+                <div class=" recent-patient-detail">
+                    <p>Name</p>
+                    <p>Gender</p>
+                    <p>Age</p>
+                    <p>Service</p>
+                    <p>Date</p>
+                    <p>Status</p>
+                </div>
+                <div class=" recent-patient-detail">
+                    <div class="patient-name">
+                        <img src="images/testimonial-profile.jpg" alt="">
+                        <p>Daniel Crish</p>
+                    </div>
+                    <p>Female</p>
+                    <p>30</p>
+                    <p>RCT</p>
+                    <p>1 Jan</p>
+                    <p>Recover</p>
+                </div>
+                <div class=" recent-patient-detail">
+                    <div class="patient-name">
+                        <img src="images/our-dentist.jpg" alt="">
+                        <p>Daniel Crish</p>
+                    </div>
+                    <p>Male</p>
+                    <p>30</p>
+                    <p>RCT</p>
+                    <p>1 Jan</p>
+                    <p>Recover</p>
+                </div>
+                <div class=" recent-patient-detail">
+                    <div class="patient-name">
+                        <img src="images/testimonial-profile.jpg" alt="">
+                        <p>Daniel Crish</p>
+                    </div>
+                    <p>Female</p>
+                    <p>30</p>
+                    <p>RCT</p>
+                    <p>1 Jan</p>
+                    <p>Recover</p>
+                </div>
+                <div class=" recent-patient-detail">
+                    <div class="patient-name">
+                        <img src="images/services-description2.jpg" alt="">
+                        <p>Daniel Crish</p>
+                    </div>
+                    <p>Female</p>
+                    <p>30</p>
+                    <p>RCT</p>
+                    <p>1 Jan</p>
+                    <p>Recover</p>
+                </div>
+                <div class=" recent-patient-detail">
+                    <div class="patient-name">
+                        <img src="images/our-dentist.jpg" alt="">
+                        <p>Daniel Crish</p>
+                    </div>
+                    <p>Male</p>
+                    <p>30</p>
+                    <p>RCT</p>
+                    <p>1 Jan</p>
+                    <p>Recover</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+<style>
+    .dashboard{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+}
+.dashboard .dashboard-logo{
+    width: 20%;
+    padding: 10px;
+    background-color: #00d1ff;
+}
+.dashboard .dashboard-menu{
+    width: 80%;
+    padding: 10px 40px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard .dashboard-menu .search-bar{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.dashboard .dashboard-menu .search-bar input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 30px;
+    outline-color: #00d1ff;
+    border: 1px solid #00d1ff;
+}
+.dashboard .dashboard-menu .search-bar img{
+    position: absolute;
+    right: 10px;
+}
+.dashboard .dashboard-menu .admin, .dashboard .dashboard-menu .profile{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.dashboard .dashboard-menu .admin img{
+    background-color: #00d1ff;
+    border-radius: 50%;
+}
+.dashboard .dashboard-menu .admin::after{
+    content: '\002b9f';
+}
+aside{
+    width: 20%;
+    padding: 10px;
+    position: fixed;
+    top: 74px;
+}
+aside a{
+    color: #00d1ff;
+    text-align: center;
+    margin: 15px ;
+}
+aside .admin{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+aside .admin img{
+    background-color: #00d1ff;
+    border-radius: 50%;
+}
+aside .aside-menu li a{
+    display: flex;
+    gap: 10px;
+    color: #7b7777;
+    position: relative;
+    margin-top: 20px;
+}
+aside .aside-menu li a::after{
+    content: '\0002c3';
+    position: absolute;
+    right: 0;
+}
+aside .aside-menu li a:hover{
+    color: #000;
+}
+main{
+    background-color: #d7d7d7;
+    position: absolute;
+    top: 74px;
+    left: 20%;
+    width: 80%;
+    padding: 10px 40px 10px 20px;
+}
+main .main-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .main-content{
+    display: flex;
+    justify-content: space-between;
+}
+main .main-content .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px ;
+    color: #fff;
+    font-size: 13px;
+}
+main .main-content .card img{
+    background-color: rgba(247, 247, 247, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+}
+main .main-content .appointment{
+    background-color: #f24c4e;
+}
+main .main-content .new-patients{
+    background-color: #00d1ff;
+}
+main .main-content .operations{
+    background-color: #396ec0;
+}
+main .main-content .earning{
+    background-color: #1b7b34;
+}
+main .charts{
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    height: 350px;
+}
+main .charts .charts-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+main .appointment-recent, main .appointment-recent .appointment-request-title, main .appointment-recent .recent-patient .recent-patient-title{
+    display: flex;
+    justify-content: space-between;
+}
+main .appointment-recent .appointment-request, main .appointment-recent .recent-patient{
+    width: 49%;
+    background-color: #fff;
+    padding: 10px;
+}
+main .appointment-recent img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+main .appointment-recent .appointment-request .appointment-request-detail{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+main p{
+    font-size: 13px;
+}
+main span{
+    font-size: 12px;
+    color: #676767;
+}
+main .recent-patient .recent-patient-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .recent-patient .recent-patient-detail{
+    display: grid;
+    align-items: center;
+    margin-top: 10px;
+    grid-template-columns: 2.5fr 1.2fr 1fr 1fr 1fr 1fr;
+}
+main .recent-patient .patient-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+</style>
+
 </body>
 </html>
