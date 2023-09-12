@@ -363,10 +363,10 @@ nav ul a:hover, nav ul .active{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 2px 2px #f00;
+    box-shadow: 2px 2px #00d1ff;
 }
 .table .first{
-    background: #f24c4e;
+    background: #00d1ff;
     justify-content: flex-start;
     box-shadow: 2px 2px rgb(0, 0, 0);
 }
@@ -382,7 +382,7 @@ nav ul a:hover, nav ul .active{
     margin-bottom: 30px;
 }
 .table .learn-more {
-   background-color: rgb(229, 42, 111);
+   background-color: #00d1ff;
   border-radius: 10px;
   display: block;
   width: unset;
