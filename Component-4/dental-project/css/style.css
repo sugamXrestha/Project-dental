@@ -780,9 +780,26 @@ p.slogan{
   height: 100%;
   margin: 0 10px 10px 0;
 }
+.prev, .next{
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 209, 255, 0.5);
+  position: absolute;
+  padding: 5px 15px;
+  top: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.next{
+  right: 28%;
+}
+.prev{
+  left: 27%;
+}
 .our-office-content{
   margin-top: 40px;
   width: 90%;
+  position: relative;
   margin: auto;
 }
 .our-office-images{

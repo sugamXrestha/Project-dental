@@ -11,13 +11,15 @@ function gallery(){
 
 
 
-    outPut += `<div class="our-office-content">`
+    outPut += `<div class="our-office-content">
+    <span class="prev" id="prev"><</span>`
     images.map((image)=>{
         outPut += `<div class="our-office-images">
         <img src="${image}">
         </div>`
     })
-    outPut += `</div>`
+    outPut += `<span class="next" id="next">></span>
+    </div>`
 
     outPut += `</div>
     </div>
@@ -40,8 +42,29 @@ document.addEventListener('DOMContentLoaded', function imageSlider() {
             if (i > len){
                 i = 1;
             }
+            if (i < 1) {
+                i = len;
+            }
             slider[i-1].style.display = 'block';
-            setTimeout(imageSlider, 2000);
+            setTimeout(imageSlider, 4000);
+
+            document.getElementById('prev').addEventListener('click', function(){
+                slider[i - 1].style.display = 'none';
+                i--;
+                if (i < 1) {
+                    i = len;
+                }
+                slider[i-1].style.display = 'block';
+            })
+            document.getElementById('next').addEventListener('click', function(){
+                slider[i - 1].style.display = 'none';
+                i++;
+                if (i > len) {
+                    i = 1;
+                }
+                slider[i-1].style.display = 'block';
+
+            })
 });
 
 export default gallery;
