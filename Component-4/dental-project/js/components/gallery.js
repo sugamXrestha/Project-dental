@@ -11,14 +11,14 @@ function gallery(){
 
 
 
-    outPut += `<div class="our-office-content">
-    <span class="prev" id="prev"><</span>`
+    outPut += `<div class="our-office-content">`
     images.map((image)=>{
         outPut += `<div class="our-office-images">
         <img src="${image}">
         </div>`
     })
-    outPut += `<span class="next" id="next">></span>
+    outPut += `<span class="prev" id="prev"><</span>
+    <span class="next" id="next">></span>
     </div>`
 
     outPut += `</div>
@@ -36,35 +36,34 @@ document.addEventListener('DOMContentLoaded', function imageSlider() {
     let slider = document.querySelectorAll('.our-office-images');
     let len = slider.length;
     for( let j = 0; j < len; j++){
-                let a = slider[j].style.display = 'none';
-            }
-            i++;
-            if (i > len){
-                i = 1;
-            }
-            if (i < 1) {
-                i = len;
-            }
-            slider[i-1].style.display = 'block';
-            setTimeout(imageSlider, 4000);
+        let a = slider[j].style.display = 'none';
+    }
+    i++;
+    if (i > len){
+        i = 1;
+    }
+    if (i < 1) {
+        i = len;
+    }
+    slider[i-1].style.display = 'block'
+    // setTimeout(imageSlider, 4000);
 
-            document.getElementById('prev').addEventListener('click', function(){
-                slider[i - 1].style.display = 'none';
-                i--;
-                if (i < 1) {
-                    i = len;
-                }
-                slider[i-1].style.display = 'block';
-            })
-            document.getElementById('next').addEventListener('click', function(){
-                slider[i - 1].style.display = 'none';
-                i++;
-                if (i > len) {
-                    i = 1;
-                }
-                slider[i-1].style.display = 'block';
-
-            })
-});
-
+    document.getElementById('prev').addEventListener('click', function(){
+        slider[i - 1].style.display = 'none';
+        i--;
+        if (i < 1) {
+            i = len;
+        }
+        slider[i-1].style.display = 'block';
+        console.log(i)
+    })
+    document.getElementById('next').addEventListener('click', function(){
+        slider[i - 1].style.display = 'none';
+        i++;
+        if (i > len) {
+            i = 1;
+        }
+        slider[i-1].style.display = 'block'
+    })
+})
 export default gallery;
