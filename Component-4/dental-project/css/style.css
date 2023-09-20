@@ -1522,10 +1522,8 @@ main .recent-patient .patient-name{
   }
   nav ul a:hover, nav ul .active {
     color: #000;
-    /* background-color: none; */
     box-shadow: none ;
     
-    /* color: #fff; */
   }
   .menu-s{
     display: inline-flex;
@@ -1770,4 +1768,4 @@ main .recent-patient .patient-name{
       font-size: 30px;
   }
   /* login page ends */
-}
+} 
